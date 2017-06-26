@@ -1,0 +1,68 @@
+@mixin cicada($parent, $child)
+  #{$parent}
+    &:nth-child(odd) #{$child}
+      border-top-left-radius: 59%
+      border-top-right-radius: 52%
+      border-bottom-left-radius: 59%
+      border-bottom-right-radius: 56%
+      transform: rotate(-6deg)
+      &:hover
+        border-top-left-radius: 51%
+        border-top-right-radius: 67%
+        border-bottom-left-radius: 64%
+        border-bottom-right-radius: 56%
+        transform: rotate(-4deg)
+    &:nth-child(even) #{$child}
+      border-top-left-radius: 82%
+      border-top-right-radius: 90%
+      border-bottom-left-radius: 125%
+      border-bottom-right-radius: 80%
+      transform: rotate(6deg)
+      &:hover
+        border-top-left-radius: 56%
+        border-top-right-radius: 58%
+        border-bottom-left-radius: 51%
+        border-bottom-right-radius: 53%
+        transform: rotate(-4deg)
+    &:nth-child(3n+2) #{$child}
+      border-top-left-radius: 84%
+      border-top-right-radius: 94%
+      border-bottom-left-radius: 72%
+      border-bottom-right-radius: 83%
+      transform: rotate(6deg)
+      &:hover
+        border-top-left-radius: 70%
+        border-top-right-radius: 55%
+        border-bottom-left-radius: 51%
+        border-bottom-right-radius: 73%
+        transform: rotate(3deg)
+    &:nth-child(5n+3) #{$child}
+      border-top-left-radius: 73%
+      border-top-right-radius: 100%
+      border-bottom-left-radius: 100%
+      border-bottom-right-radius: 82%
+      transform: rotate(7deg)
+    &:nth-child(7n+5) #{$child}
+      border-top-left-radius: 93%
+      border-top-right-radius: 90%
+      border-bottom-left-radius: 78%
+      border-bottom-right-radius: 70%
+      transform: rotate(-3deg)
+      &:hover
+        border-top-left-radius: 52%
+        border-top-right-radius: 55%
+        border-bottom-left-radius: 58%
+        border-bottom-right-radius: 61%
+        transform: rotate(2deg)
+		&:nth-child(11n+7) #{$child}
+      border-top-left-radius: 68%
+      border-top-right-radius: 68%
+      border-bottom-left-radius: 53%
+      border-bottom-right-radius: 83%
+      transform: rotate(-2deg)
+      &:hover
+        border-top-left-radius: 60%
+        border-top-right-radius: 60%
+        border-bottom-left-radius: 40%
+        border-bottom-right-radius: 60%
+        transform: rotate(-6deg)
